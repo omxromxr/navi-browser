@@ -40,6 +40,14 @@ def get_search_url(engine, query):
         "Google Scholar": "https://scholar.google.com/scholar?q=",
         "Wolfram Alpha": "https://www.wolframalpha.com/input?i=",
         "YouTube": "https://www.youtube.com/results?search_query=",
+        "Reddit": "https://www.google.com/search?q=%s+site:reddit.com",
+        "Perplexity": "https://perplexity.ai/search?q=%s",
+        "Phind": "https://www.phind.com/search?q=%s",
+        "GitHub": "https://github.com/search?q=%s&type=repositories",
+        "Wayback": "https://web.archive.org/web/*/%s",
+        "Consensus": "https://consensus.app/results/?q=%s",
+        "Amazon": "https://www.amazon.com/s?k=%s",
+        "WaybackMachine": "https://web.archive.org/web/*/%s",
     }
     return engines.get(engine, engines["Google"]) + query.replace(" ", "+")
 
