@@ -25,7 +25,20 @@ def get_search_url(engine, query):
         "Yahoo": "https://search.yahoo.com/search?p=",
         "DuckDuckGo": "https://duckduckgo.com/?q=",
         "Ecosia": "https://www.ecosia.org/search?q=",
-        "Yandex": "https://yandex.com/search/?text="
+        "Yandex": "https://yandex.com/search/?text=",
+        "Brave": "https://search.brave.com/search?q=",
+        "Startpage": "https://www.startpage.com/do/search?q=",
+        "Qwant": "https://www.qwant.com/?q=",
+        "Searx": "https://searx.be/search?q=",
+        "Baidu": "https://www.baidu.com/s?wd=",  # Popular in China
+        "Naver": "https://search.naver.com/search.naver?query=",  # Popular in South Korea
+        "Ask": "https://www.ask.com/web?q=",
+        "Mojeek": "https://www.mojeek.com/search?q=",  # Independent index
+        "Gigablast": "https://www.gigablast.com/search?q=",
+        "Swisscows": "https://swisscows.com/en/web?query=",  # Family-friendly
+        "You.com": "https://you.com/search?q=",  # AI-powered
+        "Google Scholar": "https://scholar.google.com/scholar?q=",
+        "Wolfram Alpha": "https://www.wolframalpha.com/input?i=",
     }
     return engines.get(engine, engines["Google"]) + query.replace(" ", "+")
 
