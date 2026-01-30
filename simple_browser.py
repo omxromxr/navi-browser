@@ -26,6 +26,8 @@ def get_search_url(engine, query):
         "DuckDuckGo": "https://duckduckgo.com/?q=",
         "Ecosia": "https://www.ecosia.org/search?q=",
         "Yandex": "https://yandex.com/search/?text=",
+        "Wikipedia": "https://en.wikipedia.org/wiki/Special:Search?search=",
+        "OceanHero": "https://oceanhero.today/web?q=",
         "Brave": "https://search.brave.com/search?q=",
         "Startpage": "https://www.startpage.com/do/search?q=",
         "Qwant": "https://www.qwant.com/?q=",
