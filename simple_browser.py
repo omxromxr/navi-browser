@@ -39,6 +39,7 @@ def get_search_url(engine, query):
         "You.com": "https://you.com/search?q=",  # AI-powered
         "Google Scholar": "https://scholar.google.com/scholar?q=",
         "Wolfram Alpha": "https://www.wolframalpha.com/input?i=",
+        "YouTube": "https://www.youtube.com/results?search_query=",
     }
     return engines.get(engine, engines["Google"]) + query.replace(" ", "+")
 
